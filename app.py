@@ -16,6 +16,6 @@ hostname = socket.gethostname()
 def home():
     r.incr('counter')
     count = r.get('counter').decode('utf-8')
-    return f"Container: {hostname} | Visits: {count}"
+    return f"CI/CD Success 🚀 | Container: {hostname} | Visits: {count}"
 
 app.run(host='0.0.0.0', port=5000)
